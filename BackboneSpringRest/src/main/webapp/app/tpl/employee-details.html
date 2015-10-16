@@ -1,0 +1,51 @@
+<div class="form-left-col">
+	<div class="form-group">
+    	<label>Id:</label>
+    	<div>
+    		<input id="employeeId" name="id" type="text" value="<%= id %>" disabled />
+    	</div>
+	</div>
+	<div class="form-group">
+    	<label>Name:</label>
+    	<div>
+    		<input type="text" id="name" name="name" value="<%= name %>" required/>
+    		<p class="help-block"/>
+    	</div>		
+	</div>
+	<div class="form-group">
+    	<label>Address:</label>
+    	<div>
+    		<input type="text" id="address" name="address" value="<%= address %>"/>
+			<p class="help-block"/>
+		</div>	
+	</div>
+	<div class="form-group">
+    	<label>Email:</label>
+    	<div>
+    		<input type="text" id="email" name="email" value="<%= email %>" required/>
+    		<p class="help-block"/>
+    	</div>		
+	</div>
+	<div class="form-group">
+    	<label>city:</label>
+    	<div>
+    		<input type="text" id="city" name="city" value="<%= city %>"/>
+    	</div>	
+	</div>
+	<div class="form-group">
+    <label>School:</label>
+    <input type="text" id="school" name="school"  value="<%= school %>"/>
+	</div>
+   
+
+    <button class="save">Save</button>
+    <button class="delete">Delete</button>
+</div>
+
+<div class="form-right-col">
+    <img height="300" src="app/pics/<%= picture %>"/>
+    <div>
+    	<label>Notes:</label>
+    	<textarea id="description" name="description"><%= description %></textarea>
+    </div>
+</div>
